@@ -26,6 +26,7 @@ private Loginpage loginpage= new Loginpage(DriverFactory.getDriver());
 		String userNm=credList.get(0).get("username");
 		String passW=credList.get(0).get("password");
 		DriverFactory.getDriver().get(Treepage.baseUrl+"home");
+		System.out.println("test println");
 		loginpage.doLogin(userNm, passW);
 	}
 	@Given("user open the homepage")
