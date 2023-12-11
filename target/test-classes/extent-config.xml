@@ -1,0 +1,44 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+<extentreports>
+<configuration>
+<!-- report theme --> <!-- standard,dark -->
+<theme>dark</theme>
+
+<!-- document encoding -->  <!-- defaults to UTF-8 -->
+<encoding>UTF-</encoding>
+
+<!-- protocol for script and stylesheets  -->  <!-- default to https -->
+<protocol>https</protocol>
+
+<!-- offline report -->  <!-- included for pdf -->
+<timelineEnabled>true</timelineEnabled>
+
+<!-- offline report -->  <!-- included for pdf -->
+<enableOfflineMode>false</enableOfflineMode>
+
+<!-- title of document -->
+<documentTitle>Ds-Alogo-cucumber framework</documentTitle>
+
+<!-- report name- displayed at top-nav -->
+<reportname>Extent Spark Report </reportname>
+<!-- global date format override -->  <!-- defaults to HH:MM:SS -->
+<timeformate> HH:MM:SS</timeformate>
+
+
+<!-- location of charts in the test view -->  <!-- top,bottom -->
+<testviewChartLocstion>bottom</testviewChartLocstion>
+
+<!-- custom javascript -->
+<scripts>
+<![CDATA[
+$(document).ready(function(){
+});
+]]>
+</scripts>
+<!-- custom styles -->
+<styles>
+<![CDATA[
+]]>
+</styles>
+</configuration>
+</extentreports>
