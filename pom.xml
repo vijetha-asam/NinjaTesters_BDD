@@ -24,11 +24,11 @@
     <scope>test</scope>
 </dependency>
 <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
-<dependency>
+<!--<dependency>
     <groupId>io.cucumber</groupId>
     <artifactId>cucumber-testng</artifactId>
     <version>7.14.0</version>
-</dependency>
+</dependency>-->
 
 	  <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
 <dependency>
@@ -117,15 +117,28 @@
     <artifactId>maven-cucumber-reporting</artifactId>
     <version>5.7.7</version>
 </dependency>
+<!-- https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber7-adapter -->
+<dependency>
+    <groupId>tech.grasshopper</groupId>
+    <artifactId>extentreports-cucumber7-adapter</artifactId>
+    <version>1.14.0</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/tech.grasshopper/extent-pdf-report -->
+<dependency>
+    <groupId>tech.grasshopper</groupId>
+    <artifactId>extent-pdf-report</artifactId>
+    <version>2.12.0</version>
+</dependency>
+
 
 
 <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
-<dependency>
+<!--<dependency>
     <groupId>com.aventstack</groupId>
     <artifactId>extentreports</artifactId>
     <version>5.1.0</version>
 </dependency>
-<!--<dependency>
+<dependency>
     <groupId>tech.grasshopper</groupId>
     <artifactId>extentreports-cucumber6-adapter</artifactId>
     <version>2.18.0</version>
@@ -135,20 +148,25 @@
 
 
 <!-- https://mvnrepository.com/artifact/org.testng/testng -->
-<dependency>
+<!--<dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
     <version>7.8.0</version>
     <scope>test</scope>
+</dependency>-->
+
+<dependency>
+  <groupId>org.projectlombok</groupId>
+  <artifactId>lombok</artifactId>
+  <version>1.18.28</version>
 </dependency>
 
 
-
-  	<dependency>
+  <!--	<dependency>
   		<groupId>com.demo</groupId>
   		<artifactId>Demo</artifactId>
   		<version>0.0.1-SNAPSHOT</version>
-  	</dependency>
+  	</dependency>-->
   </dependencies>
   
   
@@ -160,6 +178,11 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.0</version>
                 <configuration>
+					 <includes>
+      <include>**/TestRunner.java</include>
+    </includes>
+                  <parallel>methods</parallel>
+                  <useUnlimitedThreads>ture</useUnlimitedThreads>
                     <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
             </plugin>
@@ -175,7 +198,7 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <projectName>DsAlgoSDEt137_BDD</projectName>
+                            <projectName>NinjaTesters_BDD</projectName>
                             <outputDirectory>target/cucumber-report-html</outputDirectory>
                             <cucumberOutput>target/cucumber.json</cucumberOutput>
                         </configuration>
@@ -196,10 +219,24 @@
                     <compilerArgument>-Werror</compilerArgument>
                 </configuration>
             </plugin>
-            <plugin>
+           <!-- <plugin>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-failsafe-plugin</artifactId>
+  <version>3.2.2</version>
+  <configuration>
+    <includes>
+      <include>**/TestRunner.java</include>
+    </includes>
+    <parallel>methods</parallel>
+    <threadCountSuites>5</threadCountSuites>
+    <perCoreThreadCount>true</perCoreThreadCount>
+  </configuration>
+</plugin>-->
+
+           <!-- <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.21.0</version>
-            </plugin>
+            </plugin>-->
         </plugins>
            
             </build>

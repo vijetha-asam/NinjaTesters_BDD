@@ -1,10 +1,10 @@
 Feature: Test login functionality
-@TC:L-01
+@TC_L_01
   Scenario: Check login is successful with valid credentials
     Given browser is home page
     When click on getstart button
     Then user redirected to home page
-   @TC:L-02 
+   @TC_L_02 
     Scenario: user on login page
     Given user on the home page
     When user clicks on sign in

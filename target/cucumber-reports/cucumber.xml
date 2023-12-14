@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuite name="Cucumber" time="192.848" tests="22" skipped="0" failures="0" errors="0">
+<testcase classname="feature to genetare registration" name="create login page" time="18.365">
+<system-out><![CDATA[
+Given User opens the Ds Algo portal link....................................passed
+When The user clicks the Get Started button.................................passed
+Then The user on  homepage..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="feature to genetare registration" name="Register page" time="6.441">
+<system-out><![CDATA[
+Given User opens the homepage...............................................passed
+When User clicks Register...................................................passed
+Then User should redirected to register page................................passed
+]]></system-out>
+</testcase>
+<testcase classname="feature to genetare registration" name="login" time="5.424">
+<system-out><![CDATA[
+Given User should redirected to register page...............................passed
+When User enters username "komala"..........................................passed
+And user enters password "Koms@123".........................................passed
+And user enters confpassword "Koms@123".....................................passed
+Then User click the Register button.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test login functionality" name="Check login is successful with valid credentials" time="5.588">
+<system-out><![CDATA[
+Given browser is home page..................................................passed
+When click on getstart button...............................................passed
+Then user redirected to home page...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test login functionality" name="user on login page" time="7.069">
+<system-out><![CDATA[
+Given user on the home page.................................................passed
+When user clicks on sign in.................................................passed
+Then user clicks on loginpage...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="feature to test Graph module" name="user navigate Graph" time="7.641">
+<system-out><![CDATA[
+Given user has logged to the application....................................passed
+Given User on home page.....................................................passed
+When user clicks open the Graph.............................................passed
+Then user click graph topic.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="feature to test Graph module" name="user open the python editer on graph topic" time="8.995">
+<system-out><![CDATA[
+Given user has logged to the application....................................passed
+Given user on graph page....................................................passed
+When user clicks <Try Here> under the topic of graph........................passed
+Then the user should move to a page having an tryEditor with a Run button to test.passed
+]]></system-out>
+</testcase>
+<testcase classname="feature to test Graph module" name="user the python editer in Graph Representation" time="9.246">
+<system-out><![CDATA[
+Given user has logged to the application....................................passed
+Given user comes back graph page............................................passed
+When user clicks on Graph Representation....................................passed
+Then user clicks <Try Here> under the topic of Graph Representation.........passed
+And User should move to a page having an tryEditor with a Run button to test.passed
+]]></system-out>
+</testcase>
+<testcase classname="feature to test Graph module" name="user come out the page" time="6.45">
+<system-out><![CDATA[
+Given user has logged to the application....................................passed
+Given user go back to previous page of graph................................passed
+When user clicks Sign out...................................................passed
+Then user comes back to home page...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="feature to test Tree module" name="navigate to tree module" time="9.525">
+<system-out><![CDATA[
+Given user has logged to the homepage.......................................passed
+Given user on home page.....................................................passed
+When user clicks opens the Tree.............................................passed
+And user click on overview of tree..........................................passed
+And The user clicks <Try Here> under  the topics............................passed
+Then The user enter to a page having an tryEditor with a Run button to test.passed
+]]></system-out>
+</testcase>
+<testcase classname="feature to test Tree module" name="opens Terminologies" time="10.291">
+<system-out><![CDATA[
+Given user has logged to the homepage.......................................passed
+Given user go previous page.................................................passed
+And user clicks on Terminologies button.....................................passed
+When The user clicks <Try Here> under  the topic Terminologies..............passed
+Then The user should move to a page having an tryEditor with a Run button to test.passed
+]]></system-out>
+</testcase>
+<testcase classname="feature to test Tree module" name="opens Types of Trees" time="8.092">
+<system-out><![CDATA[
+Given user has logged to the homepage.......................................passed
+Given user come to previous page............................................passed
+And user clicks on Types of Trees...........................................passed
+When the user clicks <Try Here> under the topic.............................passed
+Then user on page having an tryEditor with a Run Button to test.............passed
+]]></system-out>
+</testcase>
+<testcase classname="feature to test Tree module" name="opens Tree Traversals" time="8.934">
+<system-out><![CDATA[
+Given user has logged to the homepage.......................................passed
+Given user go back..........................................................passed
+And user clicks Tree Traversals.............................................passed
+When user clicks <Try Here> under topic of Tree Traversals..................passed
+Then The user  move to a page having an tryEditor with a Run button to test.passed
+]]></system-out>
+</testcase>
+<testcase classname="feature to test Tree module" name="opens Traversals Illustration" time="8.617">
+<system-out><![CDATA[
+Given user has logged to the homepage.......................................passed
+Given the user come to previous page........................................passed
+And user clicks Traversals Illustration.....................................passed
+When user clicks <Try Here> under the topic of Traversals Illustration......passed
+Then The user should move  a page having an tryEditor with a Run button to test.passed
+]]></system-out>
+</testcase>
+<testcase classname="feature to test Tree module" name="opens Binary Trees" time="9.294">
+<system-out><![CDATA[
+Given user has logged to the homepage.......................................passed
+Given user on previous page.................................................passed
+And user clicks Binary Trees................................................passed
+When user clicks <Try Here> under the topic of Binary Trees.................passed
+Then user should move to a page having an tryEditor with a Run button to test.passed
+]]></system-out>
+</testcase>
+<testcase classname="feature to test Tree module" name="opens Types of Binary Trees" time="8.469">
+<system-out><![CDATA[
+Given user has logged to the homepage.......................................passed
+Given the user go back......................................................passed
+And user clicks Types of Binary Trees.......................................passed
+When user clicks <Try Here> under the topic of Types of Binary Trees........passed
+Then The user on a page having an tryEditor with a Run button to test.......passed
+]]></system-out>
+</testcase>
+<testcase classname="feature to test Tree module" name="opens implementation in python" time="8.289">
+<system-out><![CDATA[
+Given user has logged to the homepage.......................................passed
+Given the user on previous page.............................................passed
+And user clicks implementation in python....................................passed
+When user clicks <Try Here> under the topic of implementation in python.....passed
+Then user should move a page having an tryEditor with a Run button to test..passed
+]]></system-out>
+</testcase>
+<testcase classname="feature to test Tree module" name="opens binary tree trversals" time="7.725">
+<system-out><![CDATA[
+Given user has logged to the homepage.......................................passed
+Given user go  again previous...............................................passed
+And user clicks on binary tree trversals....................................passed
+When user clicks <Try Here> under the topic of binary tree trversals........passed
+Then The user should move to a page  and tryEditor with a Run button to test.passed
+]]></system-out>
+</testcase>
+<testcase classname="feature to test Tree module" name="opens Implementation of binary trees" time="8.841">
+<system-out><![CDATA[
+Given user has logged to the homepage.......................................passed
+Given user goes previous page...............................................passed
+And user clicks Implementation of binary trees..............................passed
+When user clicks <Try Here> under the topic of Implementation of binary trees.passed
+Then user on page have tryEditor with a Run Button to test..................passed
+]]></system-out>
+</testcase>
+<testcase classname="feature to test Tree module" name="opens application of binary trees" time="8.582">
+<system-out><![CDATA[
+Given user has logged to the homepage.......................................passed
+Given the user move back to previous page...................................passed
+And user clicks application of binary trees.................................passed
+When user clicks <Try Here> under the topic of application of binary trees..passed
+Then user will go a page having an tryEditor with a Run Button to test......passed
+]]></system-out>
+</testcase>
+<testcase classname="feature to test Tree module" name="opens Binary search tree" time="10.092">
+<system-out><![CDATA[
+Given user has logged to the homepage.......................................passed
+Given the user go back again................................................passed
+And user clicks Binary search tree..........................................passed
+Then user clicks <Try Here> under the topic of Binary search tree...........passed
+When user enter to a page having an tryEditor with a Run button to test.....passed
+]]></system-out>
+</testcase>
+<testcase classname="feature to test Tree module" name="opens Implementation of BST" time="9.911">
+<system-out><![CDATA[
+Given user has logged to the homepage.......................................passed
+Given the user move to previous page........................................passed
+And user clicks Implementation of BST.......................................passed
+When user clicks <Try Here> under the topic of Implementation of BST........passed
+And The user enter to  page having an tryEditor with a Run button to test...passed
+Then the enter to previous page.............................................passed
+]]></system-out>
+</testcase>
+</testsuite>
