@@ -43,7 +43,7 @@ public class Treepage {
 	//Constructor
 	public Treepage(WebDriver driver) {
 		this.driver=driver;
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5000));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 		public void clickSignin() {
 			driver.findElement(Signin).click();

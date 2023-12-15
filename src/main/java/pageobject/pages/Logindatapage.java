@@ -19,7 +19,7 @@ public static String baseUrl="https://dsportalapp.herokuapp.com/login";
 	//Constructor
 	public Logindatapage(WebDriver driver) {
 		this.driver=driver;
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1000));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 	public void fillLoginsheet(String usrnm, String passwd){
 		

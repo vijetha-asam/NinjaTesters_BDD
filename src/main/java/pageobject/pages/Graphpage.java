@@ -24,7 +24,7 @@ public class Graphpage {
 	//Constructor
 	public Graphpage(WebDriver driver) {
 		this.driver=driver;
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3000));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
     public void clickGraph() {
     	driver.findElement(graphgetstarted).click();

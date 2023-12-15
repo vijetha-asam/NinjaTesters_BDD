@@ -32,7 +32,7 @@ public class Linkedlistpage {
 	//Constructor
 	public Linkedlistpage(WebDriver driver) {
 		this.driver=driver;
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3000));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 	 public void tryHere() {
 	    	driver.findElement(Tryhere).click();

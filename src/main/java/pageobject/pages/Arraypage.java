@@ -24,7 +24,7 @@ public class Arraypage {
 	//Constructor
 	public Arraypage(WebDriver driver) {
 		this.driver=driver;
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3000));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
     public void clickArray() {
     	driver.findElement(getstarted).click();

@@ -11,6 +11,7 @@ glue= {"stepdefination","hooks" },
 monochrome=false,
 plugin= {"pretty","html:target/HtmlReports/reports.html",
 		"json:target/cucumber.json",
+		"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
 		
 		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 		"timeline:test-output-thread/"},

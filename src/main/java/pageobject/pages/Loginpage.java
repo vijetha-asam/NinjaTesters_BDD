@@ -26,7 +26,7 @@ public class Loginpage {
 	//Constructor
 	public Loginpage(WebDriver driver) {
 		this.driver=driver;
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1000));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 	public void getStarted() {
 		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)

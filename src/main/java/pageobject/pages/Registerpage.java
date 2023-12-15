@@ -21,14 +21,14 @@ public class Registerpage {
 	private By passwrd=By.xpath("//input[@id='id_password1']");
 	private By passconf=By.xpath("//input[@id='id_password2']");
 	private By regst=By.xpath("//input[@value='Register']");
-	private By datastructure=By.xpath("//div[@id='navbarCollapse']//div//a");
+	private By datastructure=By.xpath("//div[@id='navbarCollapse']//div//");
 	
 	public static String baseUrl = "https://dsportalapp.herokuapp.com/";
 	
 	//Constructor of page
 	public Registerpage(WebDriver driver) {
 		this.driver = driver;
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3000));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		
 	}
 	
